@@ -1,0 +1,18 @@
+.headline {
+  color: $orange;
+  display: grid;
+  justify-items: center;
+  margin-top: $s-size;
+  width: 500px;
+}
+
+.hed {
+  font-size: $l-size;
+  margin-bottom: .05rem;
+  text-align: center;
+}
+
+.subhed {
+  font-size: $m-size;
+  font-weight: 300;
+}

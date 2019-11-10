@@ -1,0 +1,27 @@
+.radioButtons {
+  display: grid;
+  margin-top: $l-size;
+  justify-items: center;
+}
+
+.radioButtons__title {
+  color: $darkGray;
+  font-size: $m-size;
+}
+
+.radioButtons__form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: $xl-size;
+}
+
+
+.radioButtons__label {
+    display: grid;
+    justify-items: center;
+    row-gap: $s-size;
+
+  div {
+    font-size: $m-size;
+  }
+}

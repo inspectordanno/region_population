@@ -1,0 +1,14 @@
+.svg_arc_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arc__text {
+  font-weight: 300;
+}
+
+.arc__text_pop {
+  font-size: $ml-size;
+  font-weight: 700;
+}
