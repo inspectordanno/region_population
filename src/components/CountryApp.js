@@ -40,9 +40,9 @@ const CountryApp = () => {
 
   const showBackgroundImage = () => {
     //hide geography on mobile portrait mode, otherwise show
-    if (window.innerWidth > 480) {
+    if (screen.innerWidth > 480) {
       return `url('./region_img/${regionData.name}.svg`; //image changes based on region selected
-    } else if (window.innerWidth <= 480) {
+    } else if (screen.innerWidth <= 480) {
       return 'none';
     }
   }
