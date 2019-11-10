@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap');
 
+html, body, #app {
+  height: 100%
+}
+
 html {
   font-size: 62.5%;
 }
