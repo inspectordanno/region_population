@@ -38,9 +38,18 @@ const CountryApp = () => {
   //width/height of arc svg
   const arcDiameter = 400;
 
+  const showBackgroundImage = () => {
+    //hide geography on mobile portrait mode, otherwise show
+    if (window.innerWidth > 480) {
+      return `url('./region_img/${regionData.name}.svg`; //image changes based on region selected
+    } else if (window.innerWidth <= 480) {
+      return 'none';
+    }
+  }
+
   //css background-image property
   const backgroundImage = {
-    backgroundImage: `url('./region_img/${regionData.name}.svg`, //image changes based on region selected
+    backgroundImage: showBackgroundImage(),
     backgroundPosition: 'center', //centers image
     backgroundRepeat: 'no-repeat',
     backgroundSize: '85vw', //using vw to make size responsive
