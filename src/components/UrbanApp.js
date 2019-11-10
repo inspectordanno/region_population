@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import regionDataset from '../data/regionDataset';
-import Headline from '../components/Headline';
-import RadioButtons from '../components/RadioButtons';
-import SvgArc from '../components/SvgArc';
-import Percent from '../components/Percent';
-import Arrow from '../components/Arrow';
-import Source from '../components/Source';
+import Headline from './Headline';
+import RadioButtons from './RadioButtons';
+import SvgArc from './SvgArc';
+import Percent from './Percent';
+import Arrow from './Arrow';
+import Source from './Source';
 
 //helper function
 //gets specific region data from regionDataset
@@ -14,7 +14,7 @@ import Source from '../components/Source';
     return regionDataset.find(region => region.name == regionName);
   };
 
-const CountryApp = () => {
+const UrbanApp = () => {
   //this tracks the state of the region selected
   //the default region data is Africa
   const [regionData, setRegionData] = useState(getRegionData('africa'));
@@ -57,7 +57,7 @@ const CountryApp = () => {
   }
 
   return (
-    <div className="countryApp" style={backgroundImage}>
+    <div className="urban_app" style={backgroundImage}>
       <Headline />
       <RadioButtons regionData={regionData} handleOnChange={handleOnChange} />
       <div className="svg_arc_container">
@@ -88,4 +88,4 @@ const CountryApp = () => {
   );
 }
 
-export default CountryApp;
+export default UrbanApp;
